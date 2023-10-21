@@ -24,6 +24,7 @@ class PlacesList extends StatelessWidget {
     }
 
     return ListView.builder(
+      itemCount: places.length,
       itemBuilder: (ctx, index) => ListTile(
         title: Text(
           places[index].title,
